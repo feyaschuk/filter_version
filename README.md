@@ -1,7 +1,7 @@
 # filter_version
 
 Description:
-The script filters files that are received in the "raw" folder in Azure Blob storage and that have a specific prefix. If the file has multiple versions, selects the latest version. You must specify the name of the container in Azure Blob Storage, the path to the destination directory, and the list of file prefix.
+The script filters files that are received in the "raw" folder in Azure Blob storage and that have a specific prefix. If the file has multiple versions, selects the latest version. Needed to specify the name of the container in Azure Blob Storage, the path to the destination directory, and the list of file prefix.
 
 ### How to use: 
 * Clone the repository and go to it on the command line:
