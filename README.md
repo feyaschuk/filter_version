@@ -6,10 +6,10 @@ The script filters files that are received in the "raw" folder in Azure Blob sto
 ### How to use: 
 * Clone the repository and go to it on the command line:
 ```bash
-git clone https://github.com/feyaschuk/create_processing_rules.git
+git clone https://github.com/feyaschuk/filter_version.py.git
 ```
 ```bash
-cd create_processing_rules.py
+cd filter_version.py.py
 ```
 * Create and activate virtual environment:
 ```bash
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 ```bash
 token_credential = ClientSecretCredential("{tenant-id}", "{client-id}", "{client-secret}"
 ```
-* Add container_name, folder, path_to_deliver in file "filter_version.py"
+* Check (or set) the container_name, the folder and path_to_deliver in file "filter_version.py"
 ```bash
 container_name = 'esg-dropdir'
 folder = 'sustainalytics'
@@ -40,10 +40,6 @@ path_to_deliver = "dropdir/morningstar/sustainalytics/"
 prefix_list = ['ESGRR_', 'Ref_Data_'....]
 ```
 * Run the program:
-```bash
-python filter_version.py
-```
-* Example of usage:
 ```bash
 python filter_version.py
 ```
